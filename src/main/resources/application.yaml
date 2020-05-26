@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/h2-temp-db/test
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    show-sql: on
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: on
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: on
+  h2:
+    console:
+      enabled: on
+      settings:
+        web-allow-others: on
+      path: /h2-console
